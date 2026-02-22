@@ -1,0 +1,107 @@
+{
+  "logo": {
+    "source": "~/.config/fastfetch/logos/mini_arch.txt",
+    "padding": {
+      "top": 5,
+      "left": 4,
+      "right": 4
+    }
+  },
+  "display": {
+    "disableLinewrap": true,
+    "separator": " > ",
+    "color": {
+      "separator": "light_magenta"
+    },
+    "key": {
+      "type": "string"
+    },
+    "percent": {
+      "color": {
+        "green": "light_green",
+	"yellow": "light_yellow",
+	"red": "light_red"
+      }
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "format": "[{user-name-colored}{at-symbol-colored}{host-name-colored}]"
+    },
+    "break",
+    {
+      "type": "os",
+      "key": "OS      ",
+      "keyColor": "light_red"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel  ",
+      "keyColor": "light_red"
+    },
+    {
+      "type": "packages",
+      "key": "Packages",
+      "keyColor": "light_red"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": "Host    ",
+      "format": "{family}",
+      "keyColor": "light_yellow"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU     ",
+      "keyColor": "light_yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU     ",
+      "keyColor": "light_yellow"
+    },
+    "break",
+    {
+      "type": "disk",
+      "key": "Disk    ",
+      "keyColor": "light_green"
+    },
+    {
+      "type": "memory",
+      "key": "RAM     ",
+      "keyColor": "light_green"
+    },
+    {
+      "type": "swap",
+      "key": "Swap    ",
+      "keyColor": "light_green"
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "WM      ",
+      "keyColor": "light_blue"
+    },
+    {
+      "type": "shell",
+      "key": "Shell   ",
+      "keyColor": "light_blue"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal",
+      "keyColor": "light_blue"
+    },
+    {
+      "type": "terminalfont",
+      "key": "Font    ",
+      "keyColor": "light_blue"
+    },
+    "break",
+    "colors",
+    "break"
+  ]
+}

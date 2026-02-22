@@ -1,0 +1,182 @@
+/* ========================= */
+/* = Define Custom Colours = */
+/* ========================= */
+
+@define-color dark-red      #943b3b;
+@define-color dark-green    #3d7b53;
+@define-color dark-orange   #9f6341;
+@define-color dark-blue     #146c8f;
+@define-color dark-pink     #9c4968;
+@define-color dark-cyan     #2c7d74;
+@define-color bright-red    #f25757;
+@define-color bright-green  #41ba6e;
+@define-color bright-orange #f2955e;
+@define-color bright-blue   #04b2d9;
+@define-color bright-pink   #ee8397;
+@define-color bright-cyan   #17b0a1;
+@define-color bg0           #05020c;
+@define-color bg1           #060918;
+@define-color bg2           #070f24;
+@define-color bg3           #09162f;
+@define-color bg4           #0a1c3b;
+@define-color bg5           #0b2347;
+@define-color fg0           #faf9e8;
+@define-color fg1           #edeccf;
+@define-color fg2           #dfd6c3;
+@define-color fg3           #d1bfb6;
+@define-color fg4           #c3a9aa;
+@define-color fg5           #b5929d;
+
+/* ======================== */
+/* = Set Universal Styles = */
+/* ======================== */
+
+* {
+  font-family: RecMonoLinear Nerd Font Propo, monospace;
+  font-size: 16px;
+
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+/* ====================================== */
+/* = Make Waybar Background Transparent = */
+/* ====================================== */
+
+window#waybar {
+  background-color: transparent;
+}
+
+/* ========================= */
+/* = Generic Widget Styles = */
+/* ========================= */
+
+.modules-left {
+  margin-left: 2px;
+  padding: 6px 12px;
+}
+.modules-right {
+  margin-right: 2px;
+  padding: 6px 12px;
+}
+
+widget > *:not(#workspaces) {
+  padding: 0 16px;
+}
+
+/* ============== */
+/* = Workspaces = */
+/* ============== */
+
+#workspaces {
+}
+
+#workspaces button {
+  padding: 0 2px;
+  background-color: inherit;
+  color: @fg3;
+  border-width: 0px;
+
+  transition-property: padding;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border: inherit;
+  border-color: transparent;
+  background: none;
+  transition: none;
+}
+
+#workspaces button.active {
+  padding: 0 10px;
+  background-color: @fg2;
+  color: @bg1;
+}
+
+#workspaces button.urgent {
+  color: @bright-red;
+}
+
+/* ===================== */
+/* = Left Side Modules = */
+/* ===================== */
+
+#clock {
+  color: @bright-blue;
+}
+
+#disk {
+  color: @bright-pink;
+}
+
+#memory {
+  color: @bright-pink;
+}
+
+#temperature {
+  color: @bright-orange;
+}
+
+#temperature.critical {
+  color: @bright-red;
+}
+
+/* ====================== */
+/* = Right Side Modules = */
+/* ====================== */
+
+#pulseaudio {
+  border-color: @bright-cyan;
+  color: @bright-cyan;
+}
+
+#pulseaudio.muted {
+  border-color: @dark-blue;
+  color: @dark-blue;
+}
+
+#backlight {
+  border-color: @bright-cyan;
+  color: @bright-cyan;
+}
+
+#network {
+  border-color: @bright-green;
+  color: @bright-green;
+}
+
+#network.disconnected {
+  border-color: @bright-red;
+  color: @bright-red;
+}
+
+#battery {
+  border-color: @bright-blue;
+  color: @bright-blue;
+}
+
+#battery.charging, #battery.plugged {
+  border-color: @bright-green;
+  color: @bright-green;
+}
+
+#battery.good:not(.charging) {
+  border-color: @bright-cyan;
+  color: @bright-cyan;
+}
+
+#battery.warning:not(.charging) {
+  border-color: @bright-orange;
+  color: @bright-orange;
+}
+
+#battery.critical:not(.charging) {
+  border-color: @bright-red;
+  color: @bright-red;
+}
+
+

@@ -1,0 +1,10 @@
+[mgr]
+show_hidden = true
+
+[opener]
+play = [
+	{ run = 'vlc "$@"', orphan = true }
+]
+edit = [
+	{ run = '$EDITOR "$@"', block = true }
+]
