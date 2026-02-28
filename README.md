@@ -9,12 +9,15 @@ My Arch Linux rice for my laptop.
     - foot
     - fuzzel
     - Hyprland
+        - btop
+        - cliphist
         - Discord
         - Firefox
         - grim
         - hyprpaper
         - Spotify (spotify-launcher)
         - SwayNotificationCenter (swaync)
+        - uwsm
     - Neovim (nvim)
     - Recursive Mono Nerd font (ttf-recursive-nerd)
     - Waybar
