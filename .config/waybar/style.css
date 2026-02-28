@@ -2,30 +2,30 @@
 /* = Define Custom Colours = */
 /* ========================= */
 
-@define-color dark-red      #943b3b;
-@define-color dark-green    #3d7b53;
-@define-color dark-orange   #9f6341;
-@define-color dark-blue     #146c8f;
-@define-color dark-pink     #9c4968;
-@define-color dark-cyan     #2c7d74;
-@define-color bright-red    #f25757;
-@define-color bright-green  #41ba6e;
-@define-color bright-orange #f2955e;
-@define-color bright-blue   #04b2d9;
-@define-color bright-pink   #ee8397;
-@define-color bright-cyan   #17b0a1;
-@define-color bg0           #05020c;
-@define-color bg1           #060918;
-@define-color bg2           #070f24;
-@define-color bg3           #09162f;
-@define-color bg4           #0a1c3b;
-@define-color bg5           #0b2347;
-@define-color fg0           #faf9e8;
-@define-color fg1           #edeccf;
-@define-color fg2           #dfd6c3;
-@define-color fg3           #d1bfb6;
-@define-color fg4           #c3a9aa;
-@define-color fg5           #b5929d;
+@define-color fg0 #faf9e8;
+@define-color fg1 #edeccf;
+@define-color fg2 #dfd6c3;
+@define-color fg3 #d1bfb6;
+@define-color fg4 #c3a9aa;
+@define-color fg5 #b5929d;
+@define-color bg0 #05020c;
+@define-color bg1 #060918;
+@define-color bg2 #070f24;
+@define-color bg3 #09162f;
+@define-color bg4 #0a1c3b;
+@define-color bg5 #0b2347;
+@define-color bright_red #f25757;
+@define-color bright_yellow #f2955e;
+@define-color bright_green #41ba6e;
+@define-color bright_cyan #17b0a1;
+@define-color bright_blue #04b2d9;
+@define-color bright_purple #ee8397;
+@define-color dark_red #943b3b;
+@define-color dark_yellow #9f6341;
+@define-color dark_green #3d7b53;
+@define-color dark_cyan #2c7d74;
+@define-color dark_blue #146c8f;
+@define-color dark_purple #9c4968;
 
 /* ======================== */
 /* = Set Universal Styles = */
@@ -98,7 +98,7 @@ widget > *:not(#workspaces) {
 }
 
 #workspaces button.urgent {
-  color: @bright-red;
+  color: @bright_red;
 }
 
 /* ===================== */
@@ -106,23 +106,23 @@ widget > *:not(#workspaces) {
 /* ===================== */
 
 #clock {
-  color: @bright-blue;
+  color: @bright_blue;
 }
 
 #disk {
-  color: @bright-pink;
+  color: @bright_purple;
 }
 
 #memory {
-  color: @bright-pink;
+  color: @bright_purple;
 }
 
 #temperature {
-  color: @bright-orange;
+  color: @bright_yellow;
 }
 
 #temperature.critical {
-  color: @bright-red;
+  color: @bright_red;
 }
 
 /* ====================== */
@@ -130,53 +130,53 @@ widget > *:not(#workspaces) {
 /* ====================== */
 
 #pulseaudio {
-  border-color: @bright-cyan;
-  color: @bright-cyan;
+  border-color: @bright_cyan;
+  color: @bright_cyan;
 }
 
 #pulseaudio.muted {
-  border-color: @dark-blue;
-  color: @dark-blue;
+  border-color: @dark_blue;
+  color: @dark_blue;
 }
 
 #backlight {
-  border-color: @bright-cyan;
-  color: @bright-cyan;
+  border-color: @bright_cyan;
+  color: @bright_cyan;
 }
 
 #network {
-  border-color: @bright-green;
-  color: @bright-green;
+  border-color: @bright_green;
+  color: @bright_green;
 }
 
 #network.disconnected {
-  border-color: @bright-red;
-  color: @bright-red;
+  border-color: @bright_red;
+  color: @bright_red;
 }
 
 #battery {
-  border-color: @bright-blue;
-  color: @bright-blue;
+  border-color: @bright_blue;
+  color: @bright_blue;
 }
 
 #battery.charging, #battery.plugged {
-  border-color: @bright-green;
-  color: @bright-green;
+  border-color: @bright_green;
+  color: @bright_green;
 }
 
 #battery.good:not(.charging) {
-  border-color: @bright-cyan;
-  color: @bright-cyan;
+  border-color: @bright_cyan;
+  color: @bright_cyan;
 }
 
 #battery.warning:not(.charging) {
-  border-color: @bright-orange;
-  color: @bright-orange;
+  border-color: @bright_yellow;
+  color: @bright_yellow;
 }
 
 #battery.critical:not(.charging) {
-  border-color: @bright-red;
-  color: @bright-red;
+  border-color: @bright_red;
+  color: @bright_red;
 }
 
 
