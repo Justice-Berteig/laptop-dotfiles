@@ -28,3 +28,4 @@ My Arch Linux rice for my laptop.
     - Change the wallpaper path in .config/hypr/hyprpaper.conf to point wherever you put the wallpaper.
 4. Copy the script from scripts/ into your .local/bin/ folder.
     - Alternatively edit .config/hypr/variables.conf and change `~/.local/bin/yaziccwd.sh` to `yazi`.
+5. Add .zprofile, .zshenv, .zshrc to your home folder.
