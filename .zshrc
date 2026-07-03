@@ -16,4 +16,4 @@ PROMPT='%F{4}%5~%f %B%F{15}%#%f%b '
 PROMPT_EOL_MARK=''
 
 # Run fastfetch on start
-fastfetch
+# fastfetch
