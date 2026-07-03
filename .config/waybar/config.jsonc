@@ -72,6 +72,7 @@
     "format-wifi": "  {essid} ({signalStrength}%)",
     "format-ethernet": " Ethernet",
     "format-disconnected": "Disconnected"
+
   },
   "battery": {
     "states": {

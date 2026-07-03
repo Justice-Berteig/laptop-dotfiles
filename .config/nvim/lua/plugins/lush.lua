@@ -1,4 +1,4 @@
 return {
 	"rktjmp/lush.nvim",
-	{ dir = '/home/justice/.config/nvim/colourschemes/nausicaa', lazy=true },
+	{ dir = '~/.config/nvim/colourschemes/nausicaa', lazy=true },
 }

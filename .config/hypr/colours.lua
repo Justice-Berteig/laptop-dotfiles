@@ -1,0 +1,28 @@
+-------------
+-- COLOURS --
+-------------
+
+fg0           = "rgba(faf9e8ff)"
+fg1           = "rgba(edeccfff)"
+fg2           = "rgba(dfd6c3ff)"
+fg3           = "rgba(d1bfb6ff)"
+fg4           = "rgba(c3a9aaff)"
+fg5           = "rgba(b5929dff)"
+bg0           = "rgba(05020cff)"
+bg1           = "rgba(060918ff)"
+bg2           = "rgba(070f24ff)"
+bg3           = "rgba(09162fff)"
+bg4           = "rgba(0a1c3bff)"
+bg5           = "rgba(0b2347ff)"
+bright_red    = "rgba(f25757ff)"
+bright_yellow = "rgba(f2955eff)"
+bright_green  = "rgba(41ba6eff)"
+bright_cyan   = "rgba(17b0a1ff)"
+bright_blue   = "rgba(04b2d9ff)"
+bright_purple = "rgba(ee8397ff)"
+dark_red      = "rgba(943b3bff)"
+dark_yellow   = "rgba(9f6341ff)"
+dark_green    = "rgba(3d7b53ff)"
+dark_cyan     = "rgba(2c7d74ff)"
+dark_blue     = "rgba(146c8fff)"
+dark_purple   = "rgba(9c4968ff)"
