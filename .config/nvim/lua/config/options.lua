@@ -12,9 +12,9 @@ vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
 
 -- Tab settings
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 0
 vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.smartindent = true
@@ -41,12 +41,12 @@ vim.opt.inccommand = "split"
 
 -- Diagnostic settings
 vim.diagnostic.config({
-  virtual_lines = {
-    current_line = true
-  }
+    virtual_lines = {
+        current_line = true
+    }
 })
 
 -- Synch OS and Neovim clipboards
 vim.schedule(function()
-  vim.o.clipboard = "unnamedplus"
+    vim.o.clipboard = "unnamedplus"
 end)
