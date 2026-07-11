@@ -6,7 +6,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # Custom aliases
-alias yazi="~/.local/bin/yaziccwd.sh"
+alias yazi="~/.local/bin/yazi-persist-cwd.sh"
 alias nmtui="NEWT_COLORS=\"$(<~/.config/nmtui/palette)\" nmtui"
 
 # Custom prompt
