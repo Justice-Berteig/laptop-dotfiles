@@ -7,6 +7,7 @@ return {
       "gopls",
       "html",
       "jedi_language_server",
+      "ols",
       "rust_analyzer",
       "svelte",
       "ts_ls",

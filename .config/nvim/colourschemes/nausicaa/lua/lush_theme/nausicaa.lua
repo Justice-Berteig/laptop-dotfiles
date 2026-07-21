@@ -167,25 +167,25 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg=dark_cyan, bg=Normal.bg, gui="italic" }, -- Any comment
 
-    Constant       { fg=bright_red, bg=Normal.bg }, -- (*) Any constant
-    String         { fg=bright_orange, bg=Normal.bg }, --   A string constant: "this is a string"
-    Character      { fg=bright_orange, bg=Normal.bg }, --   A character constant: 'c', '\n'
-    Number         { fg=bright_pink, bg=Normal.bg }, --   A number constant: 234, 0xff
-    Boolean        { fg=bright_green, bg=Normal.bg }, --   A boolean constant: TRUE, false
-    Float          { fg=bright_red, bg=Normal.bg}, --   A floating point constant: 2.3e10
+    Constant       { fg=bright_orange, bg=Normal.bg, gui="bold" }, -- (*) Any constant
+    String         { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A string constant: "this is a string"
+    Character      { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A character constant: 'c', '\n'
+    Number         { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A number constant: 234, 0xff
+    Boolean        { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A boolean constant: TRUE, false
+    Float          { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A floating point constant: 2.3e10
 
-    Identifier     { fg=bright_cyan, bg=Normal.bg }, -- (*) Any variable name
-    Function       { fg=bright_cyan, bg=Normal.bg }, --   Function name (also: methods for classes)
+    Identifier     { fg=bright_blue, bg=Normal.bg }, -- (*) Any variable name
+    Function       { fg=bright_blue, bg=Normal.bg }, --   Function name (also: methods for classes)
 
     Statement      { fg=bright_blue, bg=Normal.bg }, -- (*) Any statement
     Conditional    { fg=bright_blue, bg=Normal.bg }, --   if, then, else, endif, switch, etc.
     Repeat         { fg=bright_blue, bg=Normal.bg }, --   for, do, while, etc.
-    Label          { fg=bright_blue, bg=Normal.bg }, --   case, default, etc.
-    Operator       { fg=bright_cyan, bg=Normal.bg }, --   "sizeof", "+", "*", etc.
-    Keyword        { fg=bright_blue, bg=Normal.bg }, --   any other keyword
+    Label          { fg=dark_pink, bg=Normal.bg }, --   case, default, etc.
+    Operator       { fg=fg0, bg=Normal.bg }, --   "sizeof", "+", "*", etc.
+    Keyword        { fg=dark_pink, bg=Normal.bg }, --   any other keyword
     Exception      { fg=bright_red, bg=Normal.bg }, --   try, catch, throw
 
-    PreProc        { fg=bright_blue, bg=Normal.bg }, -- (*) Generic Preprocessor
+    PreProc        { fg=dark_blue, bg=Normal.bg }, -- (*) Generic Preprocessor
     -- Include        { }, --   Preprocessor #include
     -- Define         { }, --   Preprocessor #define
     -- Macro          { }, --   Same as Define
