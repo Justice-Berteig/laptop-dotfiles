@@ -175,13 +175,13 @@ local theme = lush(function(injected_functions)
     Float          { fg=bright_orange, bg=Normal.bg, gui="bold" }, --   A floating point constant: 2.3e10
 
     Identifier     { fg=bright_blue, bg=Normal.bg }, -- (*) Any variable name
-    Function       { fg=bright_blue, bg=Normal.bg }, --   Function name (also: methods for classes)
+    Function       { fg=bright_cyan, bg=Normal.bg }, --   Function name (also: methods for classes)
 
-    Statement      { fg=bright_blue, bg=Normal.bg }, -- (*) Any statement
-    Conditional    { fg=bright_blue, bg=Normal.bg }, --   if, then, else, endif, switch, etc.
-    Repeat         { fg=bright_blue, bg=Normal.bg }, --   for, do, while, etc.
+    Statement      { fg=fg0, bg=Normal.bg }, -- (*) Any statement
+    Conditional    { fg=bright_pink, bg=Normal.bg }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg=bright_pink, bg=Normal.bg }, --   for, do, while, etc.
     Label          { fg=dark_pink, bg=Normal.bg }, --   case, default, etc.
-    Operator       { fg=fg0, bg=Normal.bg }, --   "sizeof", "+", "*", etc.
+    Operator       { fg=fg0, bg=Normal.bg, gui="bold" }, --   "sizeof", "+", "*", etc.
     Keyword        { fg=dark_pink, bg=Normal.bg }, --   any other keyword
     Exception      { fg=bright_red, bg=Normal.bg }, --   try, catch, throw
 
@@ -191,7 +191,7 @@ local theme = lush(function(injected_functions)
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { fg=bright_blue, bg=Normal.bg }, -- (*) int, long, char, etc.
+    Type           { fg=bright_pink, bg=Normal.bg }, -- (*) int, long, char, etc.
     StorageClass   { fg=bright_cyan, bg=Normal.bg }, --   static, register, volatile, etc.
     Structure      { fg=bright_pink, bg=Normal.bg }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
