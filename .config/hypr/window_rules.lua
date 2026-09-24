@@ -48,11 +48,22 @@ hl.window_rule({
   no_initial_focus = true,
 })
 
--- Remove transparency from Firefox
+-- Unset workspace because it was being forced into workspace 1 for some reason.
 hl.window_rule({
-  name    = "firefox-no-transparency",
-  match   = { class = "firefox" },
-  opacity = "1.0 override",
+  name             = "firefox-no-transparency",
+  match            = { class = "firefox" },
+  workspace        = "unset",
+  no_initial_focus = false,
+})
+
+-- Make terminal slightly transparent even when active
+hl.window_rule({
+    name    = "terminal-active-transparency",
+    match   = {
+        class = "foot",
+        focus = true,
+    },
+    opacity = "0.92 override",
 })
 
 -- Allow immediate mode rendering for games
