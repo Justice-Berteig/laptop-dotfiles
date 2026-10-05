@@ -48,10 +48,12 @@ hl.window_rule({
   no_initial_focus = true,
 })
 
--- Unset workspace because it was being forced into workspace 1 for some reason.
+-- Remove transparency from Firefox
+-- Also unset workspace because it was being forced into workspace 1 for some reason.
 hl.window_rule({
   name             = "firefox-no-transparency",
   match            = { class = "firefox" },
+  opaque           = true,
   workspace        = "unset",
   no_initial_focus = false,
 })
