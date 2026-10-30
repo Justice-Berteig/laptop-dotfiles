@@ -69,8 +69,6 @@ widget > *:not(#workspaces) {
 /* ============== */
 
 #workspaces {
-    padding         : 10px;
-    background-color: red;
 }
 
 #workspaces button {
