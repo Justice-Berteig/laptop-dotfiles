@@ -16,6 +16,7 @@ hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/de
 hl.bind(mainMod .. " + V"        , hl.dsp.window.float(     { action = "toggle" }))
 hl.bind(mainMod .. " + F"        , hl.dsp.window.fullscreen({ mode="fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + P"        , hl.dsp.window.pin(       { action = "toggle" }))
+
 -- Duplicate terminal
 hl.bind(mainMod .. " + D"        , hl.dsp.exec_cmd("~/.local/bin/foot-duplicate-cwd.sh"))
 
@@ -23,7 +24,8 @@ hl.bind(mainMod .. " + D"        , hl.dsp.exec_cmd("~/.local/bin/foot-duplicate-
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"))
 
 -- Screenshot
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy"))
+hl.bind(mainMod .. " + Z"        , hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy"))
+hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" ~/images/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png"))
 
 -- Notifications
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(NOTIFICATION_CENTER))
